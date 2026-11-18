@@ -1,0 +1,28 @@
+menu:
+  title: "&8Kits"
+  size: 54
+  # Os kits são distribuídos automaticamente em pares: ícone e papel logo abaixo.
+  icon-slots: [10, 12, 14, 16, 18, 28, 30, 32, 34, 36]
+  claim-material: PAPER
+  claim-name: "&aResgatar kit"
+  claim-lore:
+    - "&7Clique para resgatar este kit."
+  preview-title: "&8Preview: %kit%"
+  editor-title: "&8Editor: %kit%"
+  edit-items-title: "&8Itens: %kit%"
+  back-material: ARROW
+  back-name: "&cVoltar"
+messages:
+  prefix: "&8[&bZarKits&8] "
+  no-permission: "&cVocê não tem permissão."
+  player-only: "&cEste comando só pode ser usado por jogadores."
+  kit-not-found: "&cEsse kit não existe."
+  kit-created: "&aKit %kit% criado. Use /zarkit edit %kit%."
+  kit-deleted: "&aKit %kit% excluído."
+  kit-saved: "&aKit %kit% salvo."
+  kit-claimed: "&aVocê resgatou o kit %kit%!"
+  cooldown: "&cVocê precisa esperar %time% para resgatar esse kit."
+  no-kit-permission: "&cVocê não tem permissão para resgatar esse kit."
+  already-claimed: "&cVocê já resgatou esse kit permanente."
+  inventory-full: "&cSeu inventário está cheio. Libere espaço antes de resgatar."
+  reloaded: "&aConfiguração recarregada."

@@ -1,0 +1,21 @@
+name: ZarKits
+version: 1.0.0
+main: br.com.zarmc.zarkits.ZarKits
+api-version: '1.21'
+author: ZarMC
+description: Sistema independente de kits do ZarMC
+commands:
+  zarkit:
+    description: Administração e edição dos kits do ZarMC
+    usage: /zarkit
+    aliases: [zarkits]
+  kits:
+    description: Abre o menu de kits
+    usage: /kits
+permissions:
+  zarkits.admin:
+    description: Permite administrar todos os kits
+    default: op
+  zarkits.use:
+    description: Permite abrir o menu de kits
+    default: true
