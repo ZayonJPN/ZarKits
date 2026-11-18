@@ -14,20 +14,22 @@ jobs:
 
     steps:
       - name: Baixar código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Java 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
+          cache-dependency-path: ZarKits-GitHub-Ready/ZarKits/pom.xml
 
       - name: Compilar plugin
+        working-directory: ZarKits-GitHub-Ready/ZarKits
         run: mvn clean package
 
       - name: Disponibilizar JAR
         uses: actions/upload-artifact@v4
         with:
           name: ZarKits
-          path: target/*.jar
+          path: ZarKits-GitHub-Ready/ZarKits/target/*.jar
